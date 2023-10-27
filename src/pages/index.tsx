@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <Layout pageTitle='Next.js landing page'>
+    <Layout pageTitle='Cars painting'>
       <div className='app__wrapper'>
         <Header />
         <Main />
