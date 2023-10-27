@@ -1,0 +1,42 @@
+@import "variables";
+
+.app__section {
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  overflow-x: auto;
+  background-color: $secndary-black;
+
+  &--about {
+    background-color: $thirdparty-black;
+    min-height: 200vh;
+    align-items: unset;
+  }
+
+  &--projects,
+  &--contacts {
+    padding: 0;
+  }
+
+  &--contacts {
+    align-items: unset;
+  }
+
+}
+
+//Styles for displays less than 1024px starts
+@media all and (max-width: 1024px) {
+  .app__section {
+    padding: 28px 16px;
+
+    &--projects {
+      padding: 28px 0;
+    }
+  }
+
+}
+
+//Styles for displays less than 1024px ends

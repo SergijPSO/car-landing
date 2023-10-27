@@ -1,0 +1,8 @@
+@import 'variables';
+
+.app__header {
+  position: fixed;
+  width: 100%;
+  background-color: $primary-green;
+  z-index: 10;
+}

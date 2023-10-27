@@ -1,0 +1,93 @@
+@import "variables";
+
+.app__projects {
+  overflow: hidden;
+
+  &-list {
+    height: 100vh;
+    width: 400vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    &__item {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      padding: 40px 80px;
+
+      &--classic {
+        background: url('/assets/images/classic.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      &--modern {
+        background: url('/assets/images/modern.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      &--airbrush {
+        background: url('/assets/images/airbrushed.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      &--painting {
+        background: url('/assets/images/parts.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      &-caption {
+        color: $thirdparty-white;
+        margin-top: 80px;
+        font-size: 22px;
+        line-height: 42px;
+        font-weight: 500;
+        display: inline-block;
+        max-width: 45%;
+      }
+
+      &-name {
+        display: inline-block;
+        color: $secondary-white;
+        font-size: 48px;
+        line-height: 78px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+//Styles for displays less than 1024px starts
+@media all and (max-width: 1024px) {
+  .app__projects-list {
+    &__item {
+      padding: 0 16px;
+
+      &-content {
+        padding-top: 40px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-caption {
+        max-width: unset;
+        margin-top: 0;
+      }
+
+      &-name {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+//Styles for displays less than 1024px ends

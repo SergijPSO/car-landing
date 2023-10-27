@@ -1,0 +1,38 @@
+@import "variables";
+
+.app__navigation {
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  &__item {
+    &-link {
+      display: inline-block;
+      padding: 18px 0;
+      font-weight: 600;
+      color: $thirdparty-white;
+      cursor: pointer;
+
+      &:hover,
+      &:active {
+        color: $secondary-white;
+      }
+    }
+
+  }
+}
+
+//Styles for displays less than 1024px starts
+@media all and (max-width: 1024px) {
+  .app__navigation {
+    &__item {
+      &-link {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+//Styles for displays less than 1024px ends

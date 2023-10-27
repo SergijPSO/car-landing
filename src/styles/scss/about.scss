@@ -1,0 +1,59 @@
+.app__about {
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    height: 100%;
+  }
+
+  &_description {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &-info {
+    flex-basis: 46%;
+    flex-grow: 2;
+    min-width: 600px;
+  }
+
+  &-picture {
+    height: 100%;
+    flex-basis: 45%;
+    min-width: 500px;
+    flex-grow: 2;
+  }
+
+  &-image {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  &_description {
+    display: inline-block;
+  }
+}
+
+//Styles for displays less than 1024px starts
+@media all and (max-width: 1024px) {
+
+  .app__about {
+
+    margin-top: 30px;
+
+    &-wrapper {
+      flex-direction: column;
+    }
+
+    &-info,
+    &-picture {
+      min-width: unset;
+    }
+  }
+}
+
+//Styles for displays less than 1024px ends

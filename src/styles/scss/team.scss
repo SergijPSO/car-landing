@@ -1,0 +1,47 @@
+@import "variables";
+
+.app__team {
+  &-members {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  &_position {
+    margin-bottom: 12px;
+    font-size: 22px;
+    color: $primary-white;
+  }
+
+  &_description {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__member {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: $secndary-grey;
+    border: 2px solid $primary-green;
+    border-radius: 16px;
+    flex-basis: 48%;
+    min-width: 300px;
+    flex-grow: 2;
+  }
+}
+
+//Styles for displays less than 1024px starts
+@media all and (max-width: 1024px) {
+  .app__team {
+    margin-top: 30px;
+
+    &_title {
+      line-height: 78px;
+    }
+  }
+}
+
+//Styles for displays less than 1024px ends
